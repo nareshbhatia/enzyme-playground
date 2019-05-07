@@ -1,9 +1,12 @@
 import React from 'react';
-import { ErrorFallbackComponent } from './ErrorFallbackComponent';
+import {
+    ErrorFallbackComponent,
+    ErrorFallbackComponentProps
+} from './ErrorFallbackComponent';
 
 export interface ErrorBoundaryProps {
     children: React.ReactNode;
-    FallbackComponent: React.ComponentType<any>;
+    FallbackComponent: React.ComponentType<ErrorFallbackComponentProps>;
 }
 
 export interface ErrorBoundaryState {
