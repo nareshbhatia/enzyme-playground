@@ -3,16 +3,12 @@ import { TickerPublisher } from './TickerPublisher';
 import { useCompanyQuery } from './useCompanyQuery';
 
 export const HomePage = () => {
-    console.log('---> render()');
-
     // Save ticker in state
     const [ticker, setTicker] = useState<string>();
 
     // Capture context changes and save them in query state
     useEffect(() => {
-        console.log('---> useEffect()');
         TickerPublisher.subscribe((ticker: string) => {
-            console.log('---> ticker received:', ticker);
             setTicker(ticker);
         });
     }, []);
@@ -25,7 +21,6 @@ export const HomePage = () => {
     }
 
     // Protect against missing ticker
-    console.log('---> ticker =', ticker);
     if (!ticker) {
         return <div>Please select a ticker</div>;
     }
