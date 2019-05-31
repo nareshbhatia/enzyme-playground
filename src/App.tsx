@@ -1,6 +1,6 @@
 import React from 'react';
 import { ErrorBoundary } from './components';
-import { HomePage } from './HomePage';
+import { HomePage } from './pages';
 
 export const App = () => {
     return (
