@@ -18,6 +18,7 @@ export const useQuery = <TData>(
                 setLoading(false);
             } catch (e) {
                 setError(e);
+                setLoading(false);
             }
         };
 
