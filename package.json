@@ -27,7 +27,9 @@
     "enzyme": "^3.9.0",
     "enzyme-adapter-react-16": "^1.13.2",
     "prettier": "^1.17.1",
+    "react-hooks-testing-library": "^0.5.1",
     "react-scripts": "3.0.1",
+    "react-test-renderer": "^16.8.6",
     "typescript": "3.4.5"
   },
   "eslintConfig": {

@@ -36,7 +36,7 @@ export const HomePage = () => {
     return (
         <div>
             <h1>
-                {company.name} ({ticker})
+                {company.name} ({company.ticker})
             </h1>
         </div>
     );
